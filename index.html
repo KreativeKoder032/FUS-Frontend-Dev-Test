@@ -4,26 +4,64 @@
     <title>Say Cheese Franciscan University</title>
     <meta charset="utf-8">
     <link href="css/fran.css" rel="stylesheet"/>
+    <link href="css/index.css" rel="stylesheet"/>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
     <script src="javascript/main.js" defer></script>
   </head>
   <body>
     <div class="main-division">
       <div class="main-content">
-        <div class="intro-image"></div>
-        <div class="main-text">
-          <div class="text-content">
-
+        <div class="fran-cheese-ad-header" style="background-image: url('./mockup-images/cheesy-header.png');">
+          <div class="fran-cheese-ad-header-gradient">
+            <h1 style="color:lightgray; margin-bottom: 0">Say Cheese</h1>
+            <h1 style="color: white; margin-top:0; font-weight: bold;">Franciscan University</h1>
           </div>
-          <div class="form-content">
-
+        </div>
+        <div class="main-text site-content-box">
+          <div class="form-content site-para-box">
+            <h2>Learn More</h2>
+            <form action="" method="post" class="interest-form">
+              <div class="program-question">
+                <label for="program-select" class="required" aria-required="true">Which program are you interested in?</label>
+                <br>
+                <select name="programs" id="program-select" required>
+                  <option value="undergraduate">Undergraduate (Bachelor's or Associate's)</option>
+                  <option value="graduate-mba">Graduate (Master of Business Administration)</option>
+                  <option value="graduate-MA">Graduate (Master of Arts)</option>
+                  <option value="graduate-MS">Graduate (Master of Science)</option>
+                </select>
+              </div>
+              <div class="location-question">
+                <label for="location-select" class="required" aria-required="true">Will you be studying on campus or online?</label>
+                <br>
+                <input type="radio" id="on-campus" name="location-select" value="on-campus" required />
+                <label for="on-campus">On Campus</label>
+                <br>
+                <input type="radio" id="Online" name="location-select" value="Online" required />
+                <label for="Online">Online</label>
+              </div>
+              <div class="first-name-question">
+                <label for="first-name" class="required" aria-required="true">Student First Name</label>
+                <br>
+                <input type="text" id="first-name" class="text-input" name="first-name" required />
+              </div>
+              <div class="last-name-question">
+                <label for="last-name" class="required" aria-required="true">Student Last Name</label>
+                <br>
+                <input type="text" id="last-name" class="text-input" size="lg" name="last-name" required />
+              </div>
+              <input type="submit" class="root-lowercase-btn" value="Submit" />
+            </form>
+          </div>
+          <div class="text-content site-para-box">
           </div>
         </div>
       </div>
-      <div class="cheese-image">
-        <img src="Mockup Images/cheesy-row-img-1.png" alt="Stacks of Cheese"/>
-        <img src="Mockup Images/cheesy-row-img-2.png" alt="Slices of Cheese"/>
-        <img src="Mockup Images/cheesy-row-img-3.png" alt="Cheese-Figure holding a sign asking for Help with Parrot in Background"/>
-        <img src="Mockup Images/cheesy-row-img-4.png" alt="Shelves full of stacks of Cheese"/>
+      <div class="cheese-images">
+        <img src="mockup-images/cheesy-row-img-1.png" class="cheese-row-image" alt="Stacks of Cheese"/>
+        <img src="mockup-images/cheesy-row-img-2.png" class="cheese-row-image" alt="Slices of Cheese"/>
+        <img src="mockup-images/cheesy-row-img-3.png" class="cheese-row-image" alt="Cheese-Figure holding a sign asking for Help with Parrot in Background"/>
+        <img src="mockup-images/cheesy-row-img-4.png" class="cheese-row-image" alt="Shelves full of stacks of Cheese"/>
       </div>
     </div>
   </body>
