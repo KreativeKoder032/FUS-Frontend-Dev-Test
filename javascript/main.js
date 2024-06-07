@@ -14,5 +14,5 @@ function AddText() {
     </p>
     <p class="second-paragraph">
       ${fileContents.slice(fileContents.indexOf("\n") + 1)}
-      </p>`
+    </p>`
 }

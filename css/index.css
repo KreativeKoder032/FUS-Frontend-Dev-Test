@@ -1,8 +1,6 @@
-
 label, input, option, select {
   font-family: 'Montserrat';
 }
-
 
 .cheese-images {
   display: flex;
@@ -10,15 +8,15 @@ label, input, option, select {
   flex-wrap: wrap;
   width: 99vw;
   object-fit: cover;
-
 }
+
 .cheese-row-image {
   flex-shrink: 1;
   width: 24.75vw;
   height: 23vw;
 }
 
-@media only screen and (min-width: 300px) and (max-width: 1200px) {
+@media only screen and (min-width: 300px) and (max-width: 1000px) {
   .main-text {
     flex-flow: wrap;
   }
@@ -26,16 +24,32 @@ label, input, option, select {
     width: 99vw;
   }
 }
-@media only screen and (min-width: 800px) and (max-width: 1200px) {
+
+@media only screen and (min-width: 700px) and (max-width: 1000px) {
   .cheese-row-image {
-      width: 49vw;
-      height: 49vw
+    width: 49vw;
+    height: 49vw
   }
 }
-@media only screen and (min-width: 300px) and (max-width: 800px) {
+
+@media only screen and (min-width: 300px) and (max-width: 700px) {
   .cheese-row-image {
-      width: 99.99vw;
-      height: 99.99vw;
+    width: 99vw;
+    height: 99vw;
+  }
+}
+
+@media only screen and (max-width: 580px) {
+  .cheese-row-image {
+    width: 580px;
+    height: 580px;
+    object-fit: cover;
+  }
+  .form-content {
+    width: 580px;
+  }
+  .fran-cheese-ad-header {
+    width: 580px;
   }
 }
 
